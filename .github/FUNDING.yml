@@ -25,3 +25,12 @@ Si la información no existe o no está confirmada:
 
 Estilo:
 Claro, neutral y comprensible.
+Usuario pregunta →
+¿La información existe?
+  Sí → Responder con la información.
+  No → Decir que no existe información.
+  def responder_ia(pregunta, info_disponible):
+    if info_disponible:
+        return "Aquí está la información disponible sobre el tema."
+    else:
+        return "No existe información confirmada sobre eso."
